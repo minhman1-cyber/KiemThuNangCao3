@@ -22,7 +22,8 @@ public class SeleniumTest {
         driver.findElement(By.id("name")).sendKeys("hello1");
         driver.findElement(By.id("user_email")).sendKeys("blabla1@gmail.com");
         driver.findElement(By.id("password")).sendKeys("password1");
-        driver.findElement(By.xpath("//button[@class = 'btn btn-primary w-100' and contains(text(), 'Đăng ký')]")).click();
+        WebElement daky = driver.findElement(By.xpath("//button[@class = 'btn btn-primary w-100' and contains(text(), 'Đăng ký')]"));
+        daky.click();
         Thread.sleep(5000);
     }
 
